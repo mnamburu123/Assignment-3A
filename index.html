@@ -1,0 +1,49 @@
+<!-- Manogna Namburu
+mnamburu@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    </canvas>
+    <br><br> 
+    <p id="numdot">XXX</p>
+    <p>
+    Body <input type="range" min="5" max="40" value="0" class="slider" id="Body"/>
+    Animation:
+    <button type = "button" id = "animationBodyOnButton">ON</button>
+    <button type = "button" id = "animationBodyOffButton">OFF</button>
+    <p>
+    <p>
+    Head <input type="range" min="5" max="40" value="0" class="slider" id="Head"/>
+    Animation:
+    <button type = "button" id = "animationHeadOnButton">ON</button>
+    <button type = "button" id = "animationHeadOffButton">OFF</button>
+    <p>
+    <p>
+    Tail <input type="range" min="5" max="40" value="0" class="slider" id="Tail"/>
+    Animation:
+    <button type = "button" id = "animationTailOnButton">ON</button>
+    <button type = "button" id = "animationTailOffButton">OFF</button>
+    <p>
+    Camera Angle<input type="range" min="-360" max="360" value="0" class="slider" id="Angle"/>
+    
+
+    <script src="Point.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Oval.js"></script>
+    <script src="world.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    
+  </body>
+</html>
